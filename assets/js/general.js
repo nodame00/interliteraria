@@ -2,6 +2,7 @@ $(document).ready(function(){
  // var altura = $('.menu').offset().top;
   var altura = 56;
   var menu_opciones = $("#menu_opciones");
+  var menu_opciones_2 = $("#menu_opciones_2");
   var el = $("#EN");
   var ea = $("#EA");
   var n = $("#N");
@@ -14,6 +15,8 @@ $(document).ready(function(){
   var mini_02 = $("#mini_02");
   var card_01 = $("#card_01");
   var card_02 = $("#card_02");
+
+  var ed = $("#ed_001");
 
   mini_02.click(function(){
     console.log(1);
@@ -41,6 +44,10 @@ $(document).ready(function(){
     
   });
 
+  ed.click(function(){
+    $(window).scrollTop(450);
+  });
+
   $(window).on('scroll', function(){
     if ( $(window).scrollTop() > altura ){
       $("#div_menu").removeClass("bg-white");
@@ -48,6 +55,7 @@ $(document).ready(function(){
       $('.menu').removeClass("bg-white");
       $('.menu').addClass("navbar-dark bg-dark"); 
       menu_opciones.css('background-color','#171818');
+      menu_opciones_2.css('background-color','#171818');
       el.addClass("a-color");
       ea.addClass("a-color");
       n.addClass("a-color");
@@ -63,6 +71,7 @@ $(document).ready(function(){
       $(".menu").removeClass("navbar-dark bg-dark");
       $(".menu").addClass("navbar-light bg-white");
       menu_opciones.css('background-color','#FFFFFF');
+      menu_opciones_2.css('background-color','#FFFFFF');
       el.removeClass("a-color");
       ea.removeClass("a-color");
       n.removeClass("a-color");
@@ -74,6 +83,7 @@ $(document).ready(function(){
     }
   });
   
+
 
 
 
