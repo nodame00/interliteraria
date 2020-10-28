@@ -56,7 +56,32 @@ div .card .dropdown-menu{
   color: #171818 !important;
 }
 
+.social-media{
+  font-size: 40px;
+  padding: 25px;
+}
 
+.social-media:hover{
+  color: #a2231d;
+}
+
+.lineamientos{
+  font-size: 100px;
+  padding: 25px;
+}
+
+.lineamientos:hover{
+  color: #a2231d;
+}
+
+.social-media-card{
+  font-size: 30px;
+  padding: 25px;
+}
+
+.social-media-card:hover{
+  color: #a2231d;
+}
 /*.en_portada{
   width: 389.04px !important;
   height: 389.04px !important;
