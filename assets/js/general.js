@@ -10,7 +10,36 @@ $(document).ready(function(){
   var m = $("#M");
   var mu = $("#Mu");
   var o = $("#O");
+  var mini_01 = $("#mini_01");
+  var mini_02 = $("#mini_02");
+  var card_01 = $("#card_01");
+  var card_02 = $("#card_02");
 
+  mini_02.click(function(){
+    console.log(1);
+    if(card_02.css("display") == "none"){
+      card_01.removeClass("visible");
+      card_01.addClass("oculto");
+
+      card_02.removeClass("oculto");
+      card_02.addClass("visible");
+
+      $(window).scrollTop(450);
+    }
+  });
+
+  mini_01.click(function(){
+    if(card_01.css("display") == "none"){
+      card_02.removeClass("visible");
+      card_02.addClass("oculto");
+
+      card_01.removeClass("oculto");
+      card_01.addClass("visible");
+      
+      $(window).scrollTop(450);
+    }
+    
+  });
 
   $(window).on('scroll', function(){
     if ( $(window).scrollTop() > altura ){
@@ -45,4 +74,7 @@ $(document).ready(function(){
     }
   });
   
+
+
+
 });
