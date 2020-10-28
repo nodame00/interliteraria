@@ -11,6 +11,8 @@ $(document).ready(function(){
   var m = $("#M");
   var mu = $("#Mu");
   var o = $("#O");
+  var pr = $("#Pr");
+  var dir = $("#Dir");
   var mini_01 = $("#mini_01");
   var mini_02 = $("#mini_02");
   var card_01 = $("#card_01");
@@ -64,6 +66,8 @@ $(document).ready(function(){
       m.addClass("a-color");
       mu.addClass("a-color");
       o.addClass("a-color");
+      pr.addClass("a-color");
+      dir.addClass("a-color");
 
     } else {
       $("#div_menu").removeClass("bg-dark");
@@ -80,6 +84,9 @@ $(document).ready(function(){
       m.removeClass("a-color");
       mu.removeClass("a-color");
       o.removeClass("a-color");
+      pr.removeClass("a-color");
+      dir.removeClass("a-color");
+
     }
   });
   
